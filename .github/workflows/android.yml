@@ -44,4 +44,4 @@ jobs:
       uses: actions/upload-artifact@v7.0.2
       with:
         name: android-build
-        path: /home/runner/work/BetterClasscharts/BetterClasscharts/
+        path: /home/runner/work/
