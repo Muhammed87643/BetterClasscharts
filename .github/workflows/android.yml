@@ -10,7 +10,7 @@ on:
     branches: [ "master" ]
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -32,7 +32,7 @@ jobs:
         cd buildozer
         sudo python setup.py install
         cd ..
-        poetry install
+        poetry install --no-root
         poetry run python3 src/main.py
     - name: Compile for Android
       run: |
