@@ -61,7 +61,7 @@ echo -------------------
 if [ "$1" == "debug" ] 
 then
 
-    buildozer android debug deploy run
+    buildozer android debug
 
 elif [ "$1" == "release" ] 
 then
