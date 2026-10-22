@@ -26,7 +26,7 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y xvfb libmtdev1 zip unzip git openjdk-17-jdk autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo6 cmake libffi-dev libssl-dev
+        sudo apt-get install -y xvfb libmtdev1 zip unzip git openjdk-17-jdk autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo6 cmake libffi-dev libssl-dev autoconf automake libtool libtool-bin libltdl-dev pkg-config m4 gettext
         python -m pip install --upgrade pip
         pip install poetry
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
